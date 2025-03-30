@@ -6,7 +6,7 @@ app = Flask(__name__)
 # Database connection
 def get_db_connection():
     conn = psycopg2.connect(
-        dbname="media_db", user="postgres", password="1", host="localhost", port="5432"
+        dbname="media_db", user="postgres", password="1", host="https://media-scanner.onrender.com", port="5432"
     )
     return conn
 
